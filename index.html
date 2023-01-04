@@ -1,20 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Honda</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <title>Honda</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--Font family-->
+
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/avenir-next-cyr" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/helvetica-255" rel="stylesheet">
+
+
+  <!--Font awesome-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Animate-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- External CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!--Header-->
+  <header class="container-fluid">
+    <nav class="navHeader navbar navbar-expand-xl row">
+      <!-- Brand -->
+      <div class="logo col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="">
+        </a>
+      </div>
+      <!-- Navbar links -->
+      <div class="menu collapse navbar-collapse col-xl-10">
+        <ul class="navbar-nav ml-auto">
+          <li class="has-dropdown nav-item ">
+            <button class="btn-nav high-light" href="#"><span>VEHICLES</span> <i
+                class="fa-solid fa-chevron-down"></i></button>
+          </li>
+          <li class="has-dropdown nav-item">
+            <button class="btn-nav high-light bd-l" href="#"><span>SHOPPING TOOLS</span> <i
+                class="fa-solid fa-chevron-down"></i></button>
+          </li>
+          <li class="nav-item">
+            <button class="btn-nav" href="#"><span>Owners</span><i class="fa-solid fa-chevron-down"></i></button>
+          </li>
+          <li class="has-dropdown nav-item">
+            <button class="btn-nav" href="#"><span>Pages</span><i class="fa-solid fa-chevron-down"></i></button>
+          </li>
+          <li class="has-dropdown nav-item">
+            <button class="btn-nav" href="#"><span>Explore</span><i class="fa-solid fa-chevron-down"></i></button>
+          </li>
+          <li class="nav-item">
+            <button class="btn-nav" href="#"><span>Find a Dealer</span></button>
+          </li>
+          <li class="has-dropdown nav-item">
+            <button class="btn-nav" href="#"><i class="fa-solid fa-globe"></i><span> EN </span><i
+                class="fa-solid fa-chevron-down"></i></button>
+          </li>
+        </ul>
+      </div>
+      <div class="row forSmall col-xl-1 col-lg-2 col-md-3 col-sm-3 col-4">
+          <button class="btn-nav col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 ml-auto" href="#"><span>Location </span><i
+              class="fa-solid fa-location-dot"></i></button>
+          <a class="btn btn-nav d-xl-none col-lg-6 col-md-6 col-sm-6 col-6" data-toggle="collapse" href="#navHeader" role="button"
+            aria-expanded="false" aria-controls="navHeader"><i class="fa-solid fa-grip-lines d-block"></i></a>
+      </div>
+    </nav>
+  </header>
+  <!--For Small screen < 1200px-->
+  <div class="forSmallScreen row d-xl-none d-lg-block d-md-block d-sm-block d-block">
+    <div class="content-nav col">
+      <div class="collapse multi-collapse" id="navHeader">
+        <div class="card card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a> <span>VEHICLES</span> <i class="fa-solid fa-chevron-right"></i> </a></li>
+            <li class="list-group-item"><a> <span>SHOPPING TOOLS</span> <i class="fa-solid fa-chevron-right"></i> </a>
+            </li>
+            <li class="list-group-item"><a> <span>Owners</span> <i class="fa-solid fa-chevron-right"></i> </a></li>
+            <li class="list-group-item"><a> <span>Pages</span> <i class="fa-solid fa-chevron-right"></i> </a></li>
+            <li class="list-group-item"><a> <span>Explore</span> <i class="fa-solid fa-chevron-right"></i> </a></li>
+            <li class="list-group-item"><a> <span>Find a Dealer</span> <i class="fa-solid fa-chevron-right"></i> </a>
+            </li>
+            <li class="list-group-item"><a> <span>LANGUAGE</span></a>
+              <div class="language-button">
+                <button class="btn btn-language active">English</button>
+                <button class="btn btn-language">中文</button>
+                <button class="btn btn-language">Español</button>
+              </div>
+            </li>
+          </ul>
+          <div class="search-form">
+            <input type="text" class="form-control" required placeholder="Search for anything Honda">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End popup forSmall screen <1200px -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -2,4 +2,201 @@
   margin: 0;
   padding: 0;
   font-size: 14px;
+  font-family: "AvenirNext-DemiBold", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Avenir Next Cyr", sans-serif;
+  font-family: "Avenir Next Cyr Thin", sans-serif;
+  font-family: "Avenir Next Cyr Ultra Light", sans-serif;
+  font-family: "Avenir Next Cyr Light", sans-serif;
+  font-family: "Avenir Next Cyr Medium", sans-serif;
+  font-family: "Avenir Next Cyr Heavy", sans-serif;
+}
+
+header {
+  position: fixed;
+  background-color: #007cc0;
+  width: 100%;
+}
+header .navHeader {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .navHeader .logo img {
+  width: 50px;
+  margin-left: 16px;
+}
+header .navHeader .menu {
+  margin: 0;
+  padding: 0;
+}
+header .navHeader span, header .navHeader i {
+  position: relative;
+}
+header .navHeader span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+header .navHeader .row.forSmall {
+  margin: 0;
+  padding: 0;
+}
+header .navHeader .row.forSmall button {
+  padding: 14px 11px 14px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  header .row.forSmall {
+    margin: 0;
+    padding: 0;
+  }
+  header .row.forSmall button span {
+    display: none;
+  }
+  header .row.forSmall i {
+    font-size: 20px;
+  }
+  .forSmallScreen .content-nav {
+    position: absolute;
+    width: 100%;
+    top: 53px;
+    left: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .forSmallScreen .content-nav .card {
+    background-color: #F5F5F5;
+  }
+  .forSmallScreen .content-nav .card .list-group-item {
+    background-color: #F5F5F5;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .forSmallScreen .content-nav .card .list-group-item a {
+    display: flex;
+    justify-content: space-between;
+  }
+  .forSmallScreen .content-nav .card .list-group-item span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #00324f;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .forSmallScreen .content-nav .card .list-group-item .language-button {
+    margin-top: 5px;
+  }
+  .forSmallScreen .content-nav .card .search-form {
+    width: 60%;
+    margin: 22px auto;
+  }
+  .forSmallScreen .content-nav .card .search-form input {
+    padding: 20px 0;
+    padding-left: 34px;
+    border-radius: 1.95rem;
+    position: relative;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: 2px solid transparent;
+  }
+  .forSmallScreen .content-nav .card .search-form input.form-control:focus {
+    border-color: #62c7ff;
+  }
+  .forSmallScreen .content-nav .card .search-form input::-moz-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #007cc0;
+    letter-spacing: 0;
+  }
+  .forSmallScreen .content-nav .card .search-form input:-ms-input-placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #007cc0;
+    letter-spacing: 0;
+  }
+  .forSmallScreen .content-nav .card .search-form input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #007cc0;
+    letter-spacing: 0;
+  }
+  .forSmallScreen .content-nav .card .search-form i {
+    position: absolute;
+    bottom: 12%;
+    left: 23%;
+    color: #007cc0;
+  }
+  .forSmallScreen .content-nav .card .search-form::-moz-placeholder {
+    color: #007cc0;
+  }
+  .forSmallScreen .content-nav .card .search-form:-ms-input-placeholder {
+    color: #007cc0;
+  }
+  .forSmallScreen .content-nav .card .search-form::placeholder {
+    color: #007cc0;
+  }
+}
+.btn-nav {
+  padding: 14px 16px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #FFFFFF;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-nav.high-light {
+  padding: 14px 30px;
+  border-color: hsla(0deg, 0%, 100%, 0.5);
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+.btn-nav.high-light.bd-l {
+  border-left: none;
+}
+.btn-nav i {
+  font-size: 16px;
+}
+.btn-nav::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.2s;
+  border: none;
+  display: block;
+}
+.btn-nav:hover {
+  border-color: #FFFFFF;
+}
+.btn-nav:hover span, .btn-nav:hover i {
+  color: #00324f;
+  z-index: 2;
+}
+.btn-nav:hover::after {
+  height: 100%;
+}
+
+.btn-language {
+  padding: 3px 14px;
+  background: #FFFFFF;
+  border: 2px solid #007cc0;
+  border-radius: 1.95rem;
+  color: #FFFFFF;
+  transition: all 0.5s;
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  color: #007cc0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.btn-language.active {
+  background-color: #007cc0;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+header {
+  position: fixed;
+  background-color: $color-primary;
+  width: 100%;
+
+  .navHeader{
+    padding: 0; 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .logo {
+      img {
+        width: 50px;
+        margin-left: $mg-16;
+      }
+    }
+    .menu {
+      margin: 0;
+      padding: 0;
+
+    }
+    span,i {
+      position: relative;
+    }
+    span {
+      @include style-text($fs-main,$fw-4,$color-white,$letter-space-0);
+    }
+    .row.forSmall {
+      margin: 0;
+      padding: 0;
+      button {
+        padding: $pd-14 $pd-11 $pd-14 0;
+      }
+    }
+  } 
+}
+
+@media screen and (max-width:1200px) {
+  header {
+    .row.forSmall {
+      margin: 0;
+      padding: 0;
+      button {
+        span {
+          display: none;
+        }
+      }
+      i {
+        font-size: $fs-20;
+      }
+    }
+  }
+  .forSmallScreen {
+    .content-nav {
+      position: absolute;
+      width: 100%;
+      top: 53px;
+      left: 0;
+      padding: 0;
+      height: 100vh;
+      .card {
+        background-color: $color-bg-main;
+        .list-group-item {
+          background-color: $color-bg-main;
+          padding-left: 0;
+          padding-right: 0;
+          a {
+            display: flex;
+            justify-content: space-between;
+          }
+          span {
+            @include style-text($fs-main,$fw-5,$color-blue-dark,$letter-space-0);
+            text-transform: uppercase;
+          }
+          .language-button {
+            margin-top: $mg-5;
+          }
+        }
+        .search-form {
+          width: 60%;
+          margin: $mg-22 auto;
+          input {
+            padding: $pd-20 0;
+            padding-left: $pd-34;
+            border-radius: $br-1;
+            position: relative;
+            box-shadow: inset 2px 2px 5px 0 rgb(0 0 0 / 15%);
+            border: 2px solid transparent;
+            
+            &.form-control:focus {
+              border-color: $color-blue-dark-light-2;
+            }
+            &::placeholder {
+              @include style-text($fs-main,$fw-4,$color-primary,0);
+            }
+          }
+
+          i {
+            position: absolute;
+            bottom: 12%;
+            left: 23%;
+            color: $color-primary;
+          }
+
+          &::placeholder {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
