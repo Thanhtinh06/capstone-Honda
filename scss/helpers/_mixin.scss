@@ -1,0 +1,16 @@
+@mixin style-button ($py,$px,$bg,$bd,$br,$color){
+  padding: $py $px;
+  background: $bg;
+  border: $bd;
+  border-radius: $br;
+  color: $color;
+  transition: all 0.5s;
+  position: relative;
+}
+
+@mixin style-text ($fs,$fw,$color,$letter-space){
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+  letter-spacing: $letter-space;
+}

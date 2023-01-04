@@ -20,18 +20,25 @@ $color-blue-dark: #00324f;
 $color-blue-dark-light:#06456a;
 $color-blue:#337ab7;
 $color-blue-light:#2198dc;
+$color-blue-dark-light-2: #62c7ff;
 
 $color-white: #FFFFFF;
+$color-white-dark: hsla(0,0%,100%,.5);
 $color-red: #e42525;
+
+$color-bg-main: #F5F5F5;
+$color-black: black;
 
 //Padding
 
+$pd-3  : 3px;
 $pd-5  : 5px;
 $pd-8  : 8px;
 $pd-9  : 9px;
 $pd-11 : 11px;
 $pd-13 : 13px;
 $pd-14 : 14px;
+$pd-16 : 16px;
 $pd-20 : 20px;
 $pd-25 : 25px;
 $pd-30 : 30px;
@@ -78,4 +85,14 @@ $bd-2 : 2px;
 
 $br-1 : 1.95rem;
 
+//Font-weight: 
 
+$fw-1 : 100;
+$fw-2 : 200;
+$fw-3 : 300;
+$fw-4 : 400;
+$fw-5 : 500;
+$fw-6 : 600;
+$fw-7 : 700;
+$fw-8 : 800;
+$fw-9 : 900;
