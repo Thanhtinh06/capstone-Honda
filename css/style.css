@@ -13,13 +13,17 @@
 
 header {
   position: fixed;
-  background-color: #007cc0;
+  z-index: 10;
   width: 100%;
+  background-color: #007cc0;
+  padding: 0;
 }
 header .navHeader {
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: none;
   position: relative;
 }
 header .navHeader .logo img {
@@ -39,32 +43,28 @@ header .navHeader span {
   color: #FFFFFF;
   letter-spacing: 0.5px;
 }
-header .navHeader .row.forSmall {
-  margin: 0;
+header .navHeader .forSmall {
   padding: 0;
-}
-header .navHeader .row.forSmall button {
-  padding: 14px 11px 14px 0;
 }
 
 @media screen and (max-width: 1200px) {
-  header .row.forSmall {
+  header .forSmall {
     margin: 0;
     padding: 0;
   }
-  header .row.forSmall button span {
+  header .forSmall button span {
     display: none;
   }
-  header .row.forSmall i {
+  header .forSmall i {
     font-size: 20px;
   }
   .forSmallScreen .content-nav {
     position: absolute;
+    z-index: 9;
     width: 100%;
     top: 53px;
     left: 0;
     padding: 0;
-    height: 100vh;
   }
   .forSmallScreen .content-nav .card {
     background-color: #F5F5F5;
@@ -77,6 +77,7 @@ header .navHeader .row.forSmall button {
   .forSmallScreen .content-nav .card .list-group-item a {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .forSmallScreen .content-nav .card .list-group-item span {
     font-size: 14px;
@@ -87,54 +88,6 @@ header .navHeader .row.forSmall button {
   }
   .forSmallScreen .content-nav .card .list-group-item .language-button {
     margin-top: 5px;
-  }
-  .forSmallScreen .content-nav .card .search-form {
-    width: 60%;
-    margin: 22px auto;
-  }
-  .forSmallScreen .content-nav .card .search-form input {
-    padding: 20px 0;
-    padding-left: 34px;
-    border-radius: 1.95rem;
-    position: relative;
-    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
-    border: 2px solid transparent;
-  }
-  .forSmallScreen .content-nav .card .search-form input.form-control:focus {
-    border-color: #62c7ff;
-  }
-  .forSmallScreen .content-nav .card .search-form input::-moz-placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    color: #007cc0;
-    letter-spacing: 0;
-  }
-  .forSmallScreen .content-nav .card .search-form input:-ms-input-placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    color: #007cc0;
-    letter-spacing: 0;
-  }
-  .forSmallScreen .content-nav .card .search-form input::placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    color: #007cc0;
-    letter-spacing: 0;
-  }
-  .forSmallScreen .content-nav .card .search-form i {
-    position: absolute;
-    bottom: 12%;
-    left: 23%;
-    color: #007cc0;
-  }
-  .forSmallScreen .content-nav .card .search-form::-moz-placeholder {
-    color: #007cc0;
-  }
-  .forSmallScreen .content-nav .card .search-form:-ms-input-placeholder {
-    color: #007cc0;
-  }
-  .forSmallScreen .content-nav .card .search-form::placeholder {
-    color: #007cc0;
   }
 }
 .btn-nav {
@@ -161,12 +114,12 @@ header .navHeader .row.forSmall button {
 .btn-nav::after {
   content: "";
   position: absolute;
+  z-index: 1;
   width: 100%;
-  height: 0;
-  background-color: #FFFFFF;
   top: 0;
   left: 0;
-  z-index: 1;
+  height: 0;
+  background-color: #FFFFFF;
   transition: all 0.2s;
   border: none;
   display: block;
@@ -199,4 +152,172 @@ header .navHeader .row.forSmall button {
 .btn-language.active {
   background-color: #007cc0;
   color: white;
+}
+
+.btn-offer {
+  padding: 11px 25px;
+  background: #e42525;
+  border: 2px solid #FFFFFF;
+  border-radius: 1.95rem;
+  color: #FFFFFF;
+  transition: all 0.5s;
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+.btn-offer:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #e42525;
+  background-color: #FFFFFF;
+}
+
+.btn-slide {
+  position: absolute;
+  z-index: 8;
+  width: none;
+  top: 50%;
+  left: none;
+  width: 45px;
+  height: 90px;
+  transform: translateY(-50%);
+  border-radius: 0 12px 12px 0;
+  color: #00324f;
+  transition: all 0.5s;
+  background-color: white;
+  border: none;
+}
+.btn-slide i {
+  font-size: 25px;
+  font-weight: none;
+  color: #00324f;
+  letter-spacing: none;
+}
+.btn-slide.carousel-control-next {
+  border-radius: 12px 0 0 12px;
+}
+.btn-slide:hover i {
+  color: #2198dc;
+}
+
+#carouselPrimary {
+  position: relative;
+  padding-top: 42%;
+}
+#carouselPrimary .carousel__content {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  top: 53px;
+  left: 0;
+  padding: 0;
+}
+#carouselPrimary .carousel__content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#carouselPrimary .carousel__content .carousel__caption {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#carouselPrimary .carousel__content .carousel__caption h5 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: none;
+}
+#carouselPrimary .carousel__content .carousel__caption p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: none;
+  margin: 5px 0;
+}
+#carouselPrimary .carousel__content .carousel__caption.none-p {
+  bottom: 15px;
+}
+#carouselPrimary ol {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  margin: 0;
+  padding-left: 11px;
+}
+#carouselPrimary ol li {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+#carouselPrimary ol li.active {
+  background-color: #007cc0;
+}
+
+.search-form {
+  width: 60%;
+  margin: 22px auto;
+}
+.search-form input {
+  padding: 20px 0;
+  background: #FFFFFF;
+  border: 2px solid transparent;
+  border-radius: 1.95rem;
+  color: black;
+  transition: all 0.5s;
+  position: relative;
+  padding-left: 40px;
+  box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+}
+.search-form input.form-control:focus {
+  border-color: #62c7ff;
+}
+.search-form input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #007cc0;
+  letter-spacing: 0;
+}
+.search-form input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #007cc0;
+  letter-spacing: 0;
+}
+.search-form input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #007cc0;
+  letter-spacing: 0;
+}
+.search-form i {
+  position: absolute;
+  z-index: none;
+  width: none;
+  bottom: 12%;
+  left: 23%;
+  color: #007cc0;
+}
+.search-form::-moz-placeholder {
+  color: #007cc0;
+}
+.search-form:-ms-input-placeholder {
+  color: #007cc0;
+}
+.search-form::placeholder {
+  color: #007cc0;
 }/*# sourceMappingURL=style.css.map */

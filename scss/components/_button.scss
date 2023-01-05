@@ -16,13 +16,10 @@
 
   &::after {
     content: "";
-    position: absolute;
-    width: 100%;
+    @include type-position-zindex-width(absolute,1,100%);
+    @include position-top-left(0,0);
     height: 0;
     background-color: $color-white;
-    top:0;
-    left: 0;
-    z-index: 1;
     transition: all 0.2s;
     border: none;
     display: block;
@@ -49,5 +46,46 @@
   &.active {
     background-color: $color-primary;
     color: white;
+  }
+}
+
+.btn-offer {
+  @include style-button($pd-11, $pd-25,$color-red, $bd-2 solid $color-white, $br-1, $color-white);
+  @include style-text($fs-12,$fw-6,$color-white,$letter-space-0);
+  text-transform: uppercase;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: $color-red;
+    background-color: $color-white;
+  }
+}
+
+
+.btn-slide {
+  @include type-position-zindex-width(absolute,8,none);
+  @include position-top-left(50%,none);
+  @include width-height(45px,90px);
+  transform: translateY(-50%);
+  border-radius: 0 $br-12 $br-12 0;
+  color: $color-blue-dark;
+  transition: all 0.5s;
+  background-color: white;
+  border: none;
+
+  i {
+    @include style-text(25px,none,$color-blue-dark,none);
+    
+  }
+
+  &.carousel-control-next {
+    border-radius: $br-12 0 0 $br-12;
+  }
+
+  &:hover {
+    i {
+      color: $color-blue-light;
+    }
   }
 }

@@ -32,52 +32,57 @@
 
 <body>
   <!--Header-->
-  <header class="container-fluid">
-    <nav class="navHeader navbar navbar-expand-xl row">
-      <!-- Brand -->
-      <div class="logo col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2">
-        <a class="navbar-brand" href="#">
-          <img src="./images/logo.png" alt="">
-        </a>
-      </div>
-      <!-- Navbar links -->
-      <div class="menu collapse navbar-collapse col-xl-10">
-        <ul class="navbar-nav ml-auto">
-          <li class="has-dropdown nav-item ">
-            <button class="btn-nav high-light" href="#"><span>VEHICLES</span> <i
-                class="fa-solid fa-chevron-down"></i></button>
-          </li>
-          <li class="has-dropdown nav-item">
-            <button class="btn-nav high-light bd-l" href="#"><span>SHOPPING TOOLS</span> <i
-                class="fa-solid fa-chevron-down"></i></button>
-          </li>
-          <li class="nav-item">
-            <button class="btn-nav" href="#"><span>Owners</span><i class="fa-solid fa-chevron-down"></i></button>
-          </li>
-          <li class="has-dropdown nav-item">
-            <button class="btn-nav" href="#"><span>Pages</span><i class="fa-solid fa-chevron-down"></i></button>
-          </li>
-          <li class="has-dropdown nav-item">
-            <button class="btn-nav" href="#"><span>Explore</span><i class="fa-solid fa-chevron-down"></i></button>
-          </li>
-          <li class="nav-item">
-            <button class="btn-nav" href="#"><span>Find a Dealer</span></button>
-          </li>
-          <li class="has-dropdown nav-item">
-            <button class="btn-nav" href="#"><i class="fa-solid fa-globe"></i><span> EN </span><i
-                class="fa-solid fa-chevron-down"></i></button>
-          </li>
-        </ul>
-      </div>
-      <div class="row forSmall col-xl-1 col-lg-2 col-md-3 col-sm-3 col-4">
-          <button class="btn-nav col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 ml-auto" href="#"><span>Location </span><i
-              class="fa-solid fa-location-dot"></i></button>
-          <a class="btn btn-nav d-xl-none col-lg-6 col-md-6 col-sm-6 col-6" data-toggle="collapse" href="#navHeader" role="button"
-            aria-expanded="false" aria-controls="navHeader"><i class="fa-solid fa-grip-lines d-block"></i></a>
-      </div>
-    </nav>
+  <header>
+    <div class="container-fluid">
+      <nav class="navHeader navbar navbar-expand-xl row">
+        <!-- Brand -->
+        <div class="logo col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="">
+          </a>
+        </div>
+        <!-- Navbar links -->
+        <div class="menu collapse navbar-collapse col-xl-10">
+          <ul class="navbar-nav ml-auto">
+            <li class="has-dropdown nav-item ">
+              <button class="btn-nav high-light" href="#"><span>VEHICLES</span> <i
+                  class="fa-solid fa-chevron-down"></i></button>
+            </li>
+            <li class="has-dropdown nav-item">
+              <button class="btn-nav high-light bd-l" href="#"><span>SHOPPING TOOLS</span> <i
+                  class="fa-solid fa-chevron-down"></i></button>
+            </li>
+            <li class="nav-item">
+              <button class="btn-nav" href="#"><span>Owners</span><i class="fa-solid fa-chevron-down"></i></button>
+            </li>
+            <li class="has-dropdown nav-item">
+              <button class="btn-nav" href="#"><span>Pages</span><i class="fa-solid fa-chevron-down"></i></button>
+            </li>
+            <li class="has-dropdown nav-item">
+              <button class="btn-nav" href="#"><span>Explore</span><i class="fa-solid fa-chevron-down"></i></button>
+            </li>
+            <li class="nav-item">
+              <button class="btn-nav" href="#"><span>Find a Dealer</span></button>
+            </li>
+            <li class="has-dropdown nav-item">
+              <button class="btn-nav" href="#"><i class="fa-solid fa-globe"></i><span> EN </span><i
+                  class="fa-solid fa-chevron-down"></i></button>
+            </li>
+          </ul>
+        </div>
+        <div class="forSmall col-xl-1 col-lg-2 col-md-3 col-sm-3 col-4">
+          <div class="row">
+            <button class="btn btn-nav col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 ml-auto location" href="#">
+              <span>Location </span><i class="fa-solid fa-location-dot"></i>
+            </button>
+            <a class="btn btn-nav d-xl-none col-lg-6 col-md-6 col-sm-6 col-6" data-toggle="collapse" href="#navHeader"
+              role="button" aria-expanded="false" aria-controls="navHeader"><i
+                class="fa-solid fa-grip-lines d-block"></i></a>
+          </div>
+      </nav>
+    </div>
   </header>
-  <!--For Small screen < 1200px-->
+  <!--For popup forSmall screen < 1200px-->
   <div class="forSmallScreen row d-xl-none d-lg-block d-md-block d-sm-block d-block">
     <div class="content-nav col">
       <div class="collapse multi-collapse" id="navHeader">
@@ -108,7 +113,65 @@
     </div>
   </div>
   <!--End popup forSmall screen <1200px -->
+  <!--End header-->
 
+  <!--Carousel -->
+  <section class="carousel slide" id="carouselPrimary">
+    <div class="carousel__content container-fluid">
+      <div class="carousel-item active">
+        <img class="img-fluid" src="./images/2022-Happy-Honda-Days-Homepage-Hero-1024-2x-C.jpg" alt="...">
+        <div class="carousel__caption none-p">
+          <h5 class="text-center">Make Honda part of your holiday journey.</h5>
+          <a class="btn-offer" href="#">SEE OFFERS</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="./images/MY23-Pilot-non-VLP-homepage-hero-1024-2x.jpg" alt="...">
+        <div class="carousel__caption">
+          <h5 class="text-center">Conquer the unpaved road in our most capable SUV ever.</h5>
+          <a class="btn-offer" href="#">Explore</a>
+          <p class="description">
+            Elite shown in Radiant Red Metallic II.<a href="#" class="disclaimer-callout m_disclaimer is-on-light"
+              aria-label="Premium Color. Disclaimer, opens a dialog" data-track="cta-click"
+              data-hrt-disclaimers-title="Premium Color"
+              data-hrt-disclaimers-content="Premium color adds $395 charge. ">*</a>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="./images/2022-Civic-10-Best-Homepage-Hero-1024-2x.jpg" alt="...">
+        <div class="carousel__caption none-p">
+          <h5 class="text-center">The 2023 Civic is named in Car and Driver’s 10Best Cars list.</h5>
+          <a class="btn-offer" href="#">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img-fluid" src="./images/2022-prologue-homepage-hero-1024-2x-upd.jpg" alt="...">
+        <div class="carousel__caption">
+          <h5 class="text-center">It’s everything an adventure-ready SUV should be. And it’s fully electric.</h5>
+          <a class="btn-offer" href="#">Learn More</a>
+          <p class="description">
+            Digital rendering of the 2024 Prologue Elite with AWD
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="change-slide">
+      <button class="carousel-control-prev btn-slide" type="button" data-target="#carouselPrimary" data-slide="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel-control-next btn-slide" type="button" data-target="#carouselPrimary" data-slide="next">
+          <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselPrimary" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselPrimary" data-slide-to="1"></li>
+        <li data-target="#carouselPrimary" data-slide-to="2"></li>
+        <li data-target="#carouselPrimary" data-slide-to="3"></li>
+      </ol>
+    </div>
+  </section>
+  <!--End Carousel-->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
