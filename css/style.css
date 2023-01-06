@@ -138,7 +138,7 @@ header .navHeader .forSmall {
 .btn-language {
   padding: 3px 14px;
   background: #FFFFFF;
-  border: 2px solid #007cc0;
+  border: 2.5px solid #007cc0;
   border-radius: 1.95rem;
   color: #FFFFFF;
   transition: all 0.5s;
@@ -157,7 +157,7 @@ header .navHeader .forSmall {
 .btn-offer {
   padding: 11px 25px;
   background: #e42525;
-  border: 2px solid #FFFFFF;
+  border: 2.5px solid #FFFFFF;
   border-radius: 1.95rem;
   color: #FFFFFF;
   transition: all 0.5s;
@@ -201,6 +201,26 @@ header .navHeader .forSmall {
   border-radius: 12px 0 0 12px;
 }
 .btn-slide:hover i {
+  color: #2198dc;
+}
+
+.btn-learn-more {
+  padding: 8px 13px;
+  background: #2198dc;
+  border: 2.5px solid transparent;
+  border-radius: 1.95rem;
+  color: #FFFFFF;
+  transition: all 0.5s;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: none;
+}
+.btn-learn-more:hover {
+  border-color: #2198dc;
+  background-color: transparent;
   color: #2198dc;
 }
 
@@ -320,4 +340,8 @@ header .navHeader .forSmall {
 }
 .search-form::placeholder {
   color: #007cc0;
+}
+
+.new__product {
+  padding: 30px 78px;
 }/*# sourceMappingURL=style.css.map */
