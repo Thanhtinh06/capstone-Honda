@@ -14,3 +14,35 @@
   color: $color;
   letter-spacing: $letter-space;
 }
+
+@mixin reset-pd-mg() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin type-position-zindex-width($position,$z-index,$width) {
+  position: $position;
+  z-index: $z-index;
+  width: $width;
+}
+
+@mixin position-top-left($top,$left) {
+  top: $top;
+  left: $left;
+}
+
+@mixin position-bottom-left($bottom,$left) {
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin style-d-flex($jus-cont,$alig-item) {
+  display: flex;
+  justify-content: $jus-cont;
+  align-items: $alig-item;
+}
+
+@mixin width-height($w,$h) {
+  width: $w;
+  height: $h;
+}

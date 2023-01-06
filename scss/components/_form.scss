@@ -1,0 +1,26 @@
+.search-form {
+  width: 60%;
+  margin: $mg-22 auto;
+  input {
+    @include style-button($pd-20,0,$color-white,2px solid transparent,$br-1,$color-black);
+    padding-left: $pd-40;
+    box-shadow: inset 2px 2px 5px 0 rgb(0 0 0 / 15%);
+    
+    &.form-control:focus {
+      border-color: $color-blue-dark-light-2;
+    }
+    &::placeholder {
+      @include style-text($fs-main,$fw-4,$color-primary,0);
+    }
+  }
+
+  i {
+    @include type-position-zindex-width(absolute,none,none);
+    @include position-bottom-left(12%,23%);
+    color: $color-primary;
+  }
+
+  &::placeholder {
+    color: $color-primary;
+  }
+}
