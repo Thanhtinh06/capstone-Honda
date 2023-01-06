@@ -4,7 +4,7 @@
   border: $bd;
   border-radius: $br;
   color: $color;
-  transition: all 0.5s;
+  transition: all 0.3s;
   position: relative;
 }
 
@@ -13,6 +13,13 @@
   font-weight: $fw;
   color: $color;
   letter-spacing: $letter-space;
+}
+
+@mixin style-bg ($bg,$size,$position){
+  background: $bg;
+  background-size: $size;
+  background-position: $position;
+  background-repeat: no-repeat;
 }
 
 @mixin reset-pd-mg() {

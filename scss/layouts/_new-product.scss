@@ -1,3 +1,33 @@
 .new__product {
   padding: $pd-30 $pd-78;
+  @include style-bg(url(../images/Background.gif),cover,none);
+  .product__item {
+    position: relative;
+    img {
+      @include width-height(100%,$h-370);
+      padding:$pd-16 0;
+    }
+    .item__text {
+      @include type-position-zindex-width(absolute,none,100%);
+      @include position-bottom-left($pd-16,0);
+      @include style-d-flex(none,center);
+      flex-direction: column;
+      padding: 0 $pd-16;
+      h3 {
+        @include style-text($fs-16,$fw-6,$color-white,none);
+        margin-bottom:$mg-20;
+        font-family: AvenirNext-Bold;
+        text-align: center;
+      }
+      button {
+        margin-bottom: $mg-20;
+      } 
+      p {
+        @include style-text($fs-12,fw-1,$color-white,none);
+        margin: 0;
+        font-family: AvenirNext-Regular;
+        text-align: center;
+      }
+    }
+  }
 }
