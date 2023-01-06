@@ -89,3 +89,15 @@
     }
   }
 }
+
+.btn-learn-more {
+  @include style-button($pd-8, $pd-13,$color-blue-light, $bd-2 solid transparent, $br-1, $color-white);
+  text-transform: uppercase;
+  @include style-text($fs-main,$fw-6,$color-white,none);
+
+  &:hover {
+    border-color: $color-blue-light;
+    background-color: transparent;
+    color: $color-blue-light;
+  }
+}
