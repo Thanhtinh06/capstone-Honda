@@ -1,0 +1,23 @@
+.tool {
+  padding: $pd-100 $pd-30;
+  background-color: $color-bg-main;
+  .tool__content {
+    .tool-item {
+      margin-bottom: $mg-30;
+      @include style-d-flex(space-around,center);
+      flex-direction: column;
+      padding: $pd-30;
+      background-color: $color-white;
+      box-shadow: 10px 10px 5px $color-box;
+      border-radius: 10px;
+      i {
+        @include style-text($fs-75,none,$color-blue-dark,none);
+      }
+      p {
+        @include style-text($fs-16,$fw-6,$color-blue-dark,none);
+        margin-top: $mg-40;
+        margin-bottom: $mg-30;
+      }
+    }
+  }
+}

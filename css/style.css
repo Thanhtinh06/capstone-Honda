@@ -175,6 +175,17 @@ header .navHeader .forSmall {
   color: #e42525;
   background-color: #FFFFFF;
 }
+.btn-offer.build {
+  padding: 11px 40px;
+  background-color: #FFFFFF;
+  color: #e42525;
+  border-color: #e42525;
+}
+.btn-offer.build:hover {
+  background-color: #e42525;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
 
 .btn-slide {
   position: absolute;
@@ -222,6 +233,72 @@ header .navHeader .forSmall {
   border-color: #2198dc;
   background-color: transparent;
   color: #2198dc;
+}
+.btn-learn-more.large-padding {
+  padding: 8px 60px;
+  border-color: #FFFFFF;
+}
+.btn-learn-more.large-padding:hover {
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-nav-product {
+  border: none;
+  background-color: transparent;
+}
+.btn-nav-product span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00324f;
+  letter-spacing: none;
+}
+.btn-nav-product span::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #2198dc;
+  opacity: 0;
+}
+.btn-nav-product.active {
+  border: none;
+  background-color: transparent !important;
+}
+.btn-nav-product.active span {
+  color: #2198dc !important;
+}
+.btn-nav-product.active span::after {
+  opacity: 1;
+}
+.btn-nav-product:hover {
+  border: none;
+}
+.btn-nav-product:hover span {
+  color: #2198dc;
+}
+.btn-nav-product:focus {
+  border: 0;
+  outline: none;
+}
+
+.btn-tool {
+  padding: 3px 30px;
+  background: #007cc0;
+  border: 2.5px solid transparent;
+  border-radius: 1.95rem;
+  color: #FFFFFF;
+  transition: all 0.3s;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: none;
+}
+.btn-tool:hover {
+  border-color: #007cc0;
+  background-color: transparent;
+  color: #007cc0;
 }
 
 #carouselPrimary {
@@ -389,4 +466,320 @@ header .navHeader .forSmall {
   margin: 0;
   font-family: AvenirNext-Regular;
   text-align: center;
+}
+
+.product {
+  background-color: #F5F5F5;
+  text-align: center;
+}
+.product .title h2 {
+  font-size: 60px;
+  font-weight: 100;
+  color: #06456a;
+  letter-spacing: 0.5px;
+}
+.product .text-offer {
+  font-family: AvenirNext-Regular;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.product .text-offer span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-family: AvenirNext-Bold;
+}
+.product .nav__product {
+  width: 70%;
+  margin: 20px auto;
+}
+.product .nav__product .nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+}
+.product .car__content {
+  font-family: AvenirNext-Regular;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 49px;
+  height: 590px;
+  background: url(../images/MY22-accord-hero-intro-1400-2-2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product .car__content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.product .car__content .content {
+  padding: 20px 60px;
+}
+.product .car__content .content .car__text p {
+  font-family: AvenirNext-Regular;
+}
+.product .car__content .content .car__text .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+.product .car__content .content .car__text .stats .stat {
+  font-family: AvenirNext-Regular;
+  font-size: 44px;
+  font-weight: none;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .car__content .content .car__text .stats .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .car__content .content .btn-car {
+  margin-top: 40px;
+}
+.product .suv__content {
+  font-family: AvenirNext-Regular;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 49px;
+  height: 590px;
+  background: url(../images/MY23-ComparePromo-Passport-L-2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product .suv__content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.product .suv__content .content {
+  padding: 20px 60px;
+}
+.product .suv__content .content .car__text p {
+  font-family: AvenirNext-Regular;
+}
+.product .suv__content .content .car__text .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+.product .suv__content .content .car__text .stats .stat {
+  font-family: AvenirNext-Regular;
+  font-size: 44px;
+  font-weight: none;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .suv__content .content .car__text .stats .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .suv__content .content .btn-car {
+  margin-top: 40px;
+}
+.product .min__content {
+  font-family: AvenirNext-Regular;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 49px;
+  height: 590px;
+  background: url(../images/2022-Civic-10-Best-Homepage-Hero-1400-1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product .min__content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.product .min__content .content {
+  padding: 20px 60px;
+}
+.product .min__content .content .car__text p {
+  font-family: AvenirNext-Regular;
+}
+.product .min__content .content .car__text .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+.product .min__content .content .car__text .stats .stat {
+  font-family: AvenirNext-Regular;
+  font-size: 44px;
+  font-weight: none;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .min__content .content .car__text .stats .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .min__content .content .btn-car {
+  margin-top: 40px;
+}
+.product .elec__content {
+  font-family: AvenirNext-Regular;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 49px;
+  height: 590px;
+  background: url(./../../images/MY23-CR-V-Feature-Blade-Exterior-Overview-A.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product .elec__content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.product .elec__content .content {
+  padding: 20px 60px;
+}
+.product .elec__content .content .car__text p {
+  font-family: AvenirNext-Regular;
+}
+.product .elec__content .content .car__text .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+.product .elec__content .content .car__text .stats .stat {
+  font-family: AvenirNext-Regular;
+  font-size: 44px;
+  font-weight: none;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .elec__content .content .car__text .stats .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .elec__content .content .btn-car {
+  margin-top: 40px;
+}
+.product .pre__content {
+  font-family: AvenirNext-Regular;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 49px;
+  height: 590px;
+  background: url(./../../images/MY22-passport-feat-blade-capability-overview-desktop-2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product .pre__content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.product .pre__content .content {
+  padding: 20px 60px;
+}
+.product .pre__content .content .car__text p {
+  font-family: AvenirNext-Regular;
+}
+.product .pre__content .content .car__text .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+.product .pre__content .content .car__text .stats .stat {
+  font-family: AvenirNext-Regular;
+  font-size: 44px;
+  font-weight: none;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .pre__content .content .car__text .stats .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .pre__content .content .btn-car {
+  margin-top: 40px;
+}
+.product .future__content {
+  font-family: AvenirNext-Regular;
+  color: #FFFFFF;
+  text-align: left;
+  padding-top: 49px;
+  height: 590px;
+  background: url(./../../images/MY21-Rugged-promo-banner-M.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product .future__content img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.product .future__content .content {
+  padding: 20px 60px;
+}
+.product .future__content .content .car__text p {
+  font-family: AvenirNext-Regular;
+}
+.product .future__content .content .car__text .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+}
+.product .future__content .content .car__text .stats .stat {
+  font-family: AvenirNext-Regular;
+  font-size: 44px;
+  font-weight: none;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .future__content .content .car__text .stats .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+.product .future__content .content .btn-car {
+  margin-top: 40px;
+}
+
+.tool {
+  padding: 100px 30px;
+  background-color: #F5F5F5;
+}
+.tool .tool__content .tool-item {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 5px rgba(170, 168, 168, 0.084);
+  border-radius: 10px;
+}
+.tool .tool__content .tool-item i {
+  font-size: 75px;
+  font-weight: none;
+  color: #00324f;
+  letter-spacing: none;
+}
+.tool .tool__content .tool-item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00324f;
+  letter-spacing: none;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
