@@ -53,3 +53,37 @@
   width: $w;
   height: $h;
 }
+
+@mixin style-slide($bg) {
+  font-family: AvenirNext-Regular;
+    color: $color-white;
+    text-align: left;
+    padding-top: $pd-49;
+    height: 590px;
+    @include style-bg ($bg,cover,center);
+    img {
+      width: 100%;
+      margin-bottom: $mg-30;
+    }
+    .content{
+      padding: $pd-20 $pd-60;
+      .car__text {
+        p {
+          font-family: AvenirNext-Regular;
+        }
+        .stats {
+          @include style-d-flex(space-around,left);
+          .stat {
+            font-family: AvenirNext-Regular;
+            @include style-text($fs-44,none,$color-white,0)
+          }
+          .label {
+            @include style-text($fs-12,$fw-6,$color-white,0)
+          }
+        }
+      }
+      .btn-car {
+        margin-top: 40px;
+      }
+    }
+}

@@ -76,8 +76,7 @@
               <span>Location </span><i class="fa-solid fa-location-dot"></i>
             </button>
             <a class="btn btn-nav d-xl-none col-lg-6 col-md-6 col-sm-6 col-6" data-toggle="collapse" href="#navHeader"
-              role="button" aria-expanded="false" aria-controls="navHeader"><i
-                class="fa-solid fa-grip-lines d-block"></i></a>
+              role="button" aria-expanded="false" aria-controls="navHeader"><i class="fa-solid fa-bars d-block"></i></a>
           </div>
       </nav>
     </div>
@@ -196,12 +195,238 @@
   <!--End new product-->
 
   <!--Product-->
-  <section class="product">
+  <section class="product carousel slide" id="product-slide">
     <div class="title">
       <h2>Our Vehicles</h2>
     </div>
-    
+    <div class="nav__product">
+      <ol class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active btn-nav-product" id="car-tab" data-toggle="tab" data-target="#car"
+            type="button" role="tab" aria-controls="car" aria-selected="true"> <span>CARS</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn-nav-product" id="suvs-cross-tab" data-toggle="tab" data-target="#suvs-cross"
+            type="button" role="tab" aria-controls="suvs-cross" aria-selected="false"> <span>SUVS &
+              CROSSOVERS</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn-nav-product" id="minivan-tab" data-toggle="tab" data-target="#minivan"
+            type="button" role="tab" aria-controls="minivan" aria-selected="false"> <span>MINIVAN &
+              TRUCK</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn-nav-product" id="electrified-tab" data-toggle="tab" data-target="#electrified"
+            type="button" role="tab" aria-controls="electrified" aria-selected="false"><span>ELECTRIFIED</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn-nav-product" id="pre-owned-tab" data-toggle="tab" data-target="#pre-owned"
+            type="button" role="tab" aria-controls="pre-owned" aria-selected="false"><span>PRE-OWNED</span></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link btn-nav-product" id="future-tab" data-toggle="tab" data-target="#future" type="button"
+            role="tab" aria-controls="future" aria-selected="false"><span>FUTURE</span></button>
+        </li>
+      </ol>
+    </div>
+    <div class="tab-content carousel-inner">
+      <div class="tab-pane fade show active carousel-item" id="car" role="tabpanel" aria-labelledby="car-tab">
+        <div class="container-fluid">
+          <div class="car__content row">
+            <div class="content col-xl-4">
+              <div class="text-offer"><span>Cars 1 /</span> 6</div>
+              <img src="./images/accord_my22_light_petrol_956px.png" alt="">
+              <div class="car__text">
+                <p>Sophisticated on the outside. Tech-forward on the
+                  inside. Add efficiency and exhilaration to every drive in the no-compromise Accord Hybrid.</p>
+                <div class="stats">
+                  <div class="lease-rate">
+                    <div class="stat">$27,720</div>
+                    <div class="label">STARTING MSRP<a href="#">*</a></div>
+                  </div>
+                  <div class="range-rating pl-4">
+                    <div class="stat">48 / 47</div>
+                    <div class="label">CITY/HWY MPG RATING<a href="#">*</a></div>
+                  </div>
+                </div>
+                <div class="btn-car">
+                  <a class="btn-offer" href="#">SEE OFFERS</a>
+                  <a class="btn-offer build" href="#">Build</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade carousel-item" id="suvs-cross" role="tabpanel" aria-labelledby="suvs-cross-tab">
+        <div class="container-fluid">
+          <div class="suv__content row">
+            <div class="content col-xl-4">
+              <div class="text-offer"><span>Cars 1 /</span> 6</div>
+              <img src="./images/accord_my22_light_petrol_956px.png" alt="">
+              <div class="car__text">
+                <p>Sophisticated on the outside. Tech-forward on the
+                  inside. Add efficiency and exhilaration to every drive in the no-compromise Accord Hybrid.</p>
+                <div class="stats">
+                  <div class="lease-rate">
+                    <div class="stat">$27,720</div>
+                    <div class="label">STARTING MSRP<a href="#">*</a></div>
+                  </div>
+                  <div class="range-rating pl-4">
+                    <div class="stat">48 / 47</div>
+                    <div class="label">CITY/HWY MPG RATING<a href="#">*</a></div>
+                  </div>
+                </div>
+                <div class="btn-car">
+                  <a class="btn-offer" href="#">SEE OFFERS</a>
+                  <a class="btn-offer build " href="#">Build</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade carousel-item" id="minivan" role="tabpanel" aria-labelledby="minivan-tab">
+        <div class="container-fluid">
+          <div class="min__content row ">
+            <div class="content col-xl-4">
+              <div class="text-offer"><span>Cars 1 /</span> 6</div>
+              <img src="./images/accord_my22_light_petrol_956px.png" alt="">
+              <div class="car__text">
+                <p>Sophisticated on the outside. Tech-forward on the
+                  inside. Add efficiency and exhilaration to every drive in the no-compromise Accord Hybrid.</p>
+                <div class="stats">
+                  <div class="lease-rate">
+                    <div class="stat">$27,720</div>
+                    <div class="label">STARTING MSRP<a href="#">*</a></div>
+                  </div>
+                  <div class="range-rating pl-4">
+                    <div class="stat">48 / 47</div>
+                    <div class="label">CITY/HWY MPG RATING<a href="#">*</a></div>
+                  </div>
+                </div>
+                <div class="btn-car">
+                  <a class="btn-offer" href="#">SEE OFFERS</a>
+                  <a class="btn-offer build " href="#">Build</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade carousel-item" id="electrified" role="tabpanel" aria-labelledby="electrified-tab">
+        <div class="container-fluid">
+          <div class="elec__content row ">
+            <div class="content col-xl-4">
+              <div class="text-offer"><span>Cars 1 /</span> 6</div>
+              <img src="./images/accord_my22_light_petrol_956px.png" alt="">
+              <div class="car__text">
+                <p>Sophisticated on the outside. Tech-forward on the
+                  inside. Add efficiency and exhilaration to every drive in the no-compromise Accord Hybrid.</p>
+                <div class="stats">
+                  <div class="lease-rate">
+                    <div class="stat">$27,720</div>
+                    <div class="label">STARTING MSRP<a href="#">*</a></div>
+                  </div>
+                  <div class="range-rating pl-4">
+                    <div class="stat">48 / 47</div>
+                    <div class="label">CITY/HWY MPG RATING<a href="#">*</a></div>
+                  </div>
+                </div>
+                <div class="btn-car">
+                  <a class="btn-offer" href="#">SEE OFFERS</a>
+                  <a class="btn-offer build " href="#">Build</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade carousel-item" id="pre-owned" role="tabpanel" aria-labelledby="pre-owned-tab">
+        <div class="container-fluid">
+          <div class="pre__content row ">
+            <div class="content col-xl-4">
+              <div class="text-offer"><span>Cars 1 /</span> 6</div>
+              <img src="./images/accord_my22_light_petrol_956px.png" alt="">
+              <div class="car__text">
+                <p>Sophisticated on the outside. Tech-forward on the
+                  inside. Add efficiency and exhilaration to every drive in the no-compromise Accord Hybrid.</p>
+                <div class="btn-car">
+                  <a class="btn-learn-more large-padding" href="#">Shop certified</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade carousel-item" id="future" role="tabpanel" aria-labelledby="future-tab">
+        <div class="container-fluid">
+          <div class="future__content row ">
+            <div class="content col-xl-4">
+              <div class="text-offer"><span>Cars 1 /</span> 6</div>
+              <img src="./images/accord_my22_light_petrol_956px.png" alt="">
+              <div class="car__text">
+                <p>Sophisticated on the outside. Tech-forward on the
+                  inside. Add efficiency and exhilaration to every drive in the no-compromise Accord Hybrid.</p>
+                <div class="btn-car">
+                  <a class="btn-learn-more large-padding" href="#">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev btn-slide left" data-target="#product-slide" data-slide="prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a class="carousel-control-next btn-slide right" data-target="#product-slide" data-slide="next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+
   </section>
+  <!--Tool-->
+
+  <div class="tool">
+    <div class="tool__content">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="tool-item">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <p>Build and Price</p>
+            <button class="btn btn-tool btn-learn-more">GO</button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="tool-item">
+            <i class="fa-solid fa-tag"></i>
+            <p>See Offers</p>
+            <button class="btn btn-tool btn-learn-more">GO</button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="tool-item">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p>Search Iventory</p>
+            <button class="btn btn-tool btn-learn-more">GO</button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="tool-item">
+            <i class="fa-solid fa-calculator"></i>
+            <p>Estimate Payments</p>
+            <button class="btn btn-tool btn-learn-more">GO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

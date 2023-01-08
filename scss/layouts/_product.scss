@@ -1,0 +1,50 @@
+.product {
+  background-color: $color-bg-main;
+  text-align: center;
+
+  .title {
+    h2 {
+      @include style-text($fs-60,$fw-1,$color-blue-dark-light,$letter-space-0);
+    }
+  }
+  .text-offer {
+    font-family: AvenirNext-Regular;
+    margin-bottom: $mg-30;
+    font-size: $fs-main;
+    span {
+      @include style-text($fs-main,$fw-6,$color-white,0);
+      text-transform: uppercase;
+      font-family: AvenirNext-Bold;
+    }
+  }
+
+  .nav__product {
+    width: 70%;
+    margin: $mg-20 auto;
+
+    .nav-tabs {
+      @include style-d-flex(space-around,center);
+      border: none;
+    }
+  }
+
+  .car__content {
+    @include style-slide(url(../images/MY22-accord-hero-intro-1400-2-2x.jpg));
+  }
+  .suv__content {
+    @include style-slide(url(../images/MY23-ComparePromo-Passport-L-2x.jpg));
+  }
+  .min__content {
+    @include style-slide(url(../images/2022-Civic-10-Best-Homepage-Hero-1400-1x.jpg));
+  }
+  .elec__content {
+    @include style-slide(url(./../../images/MY23-CR-V-Feature-Blade-Exterior-Overview-A.jpg));
+  }
+  .pre__content {
+    @include style-slide(url(./../../images/MY22-passport-feat-blade-capability-overview-desktop-2x.jpg));
+  }
+  .future__content {
+    @include style-slide(url(./../../images/MY21-Rugged-promo-banner-M.jpg));
+  }
+
+}

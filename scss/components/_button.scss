@@ -60,6 +60,17 @@
     color: $color-red;
     background-color: $color-white;
   }
+  &.build {
+    padding: $pd-11 $pd-40;
+    background-color: $color-white;
+    color: $color-red;
+    border-color: $color-red;
+    &:hover {
+      background-color: $color-red;
+      color: $color-white;
+      border-color: $color-white;
+    }
+  }
 }
 
 
@@ -99,5 +110,61 @@
     border-color: $color-blue-light;
     background-color: transparent;
     color: $color-blue-light;
+  }
+  &.large-padding {
+    padding: $pd-8 $pd-60;
+    border-color: $color-white;
+    &:hover {
+      background-color: $color-white;
+      text-decoration: none;
+    }
+  }
+}
+
+.btn-nav-product {
+  border: none;
+  background-color: transparent;
+  span {
+    @include style-text($fs-main,$fw-6,$color-blue-dark,none);
+    &::after {
+      content: "";
+      display: block;
+      height: 5px;
+      background-color: $color-blue-light;
+      opacity: 0;
+    }
+  }
+
+  &.active {
+    border: none;
+    background-color: transparent !important;
+    span {
+      color: $color-blue-light !important;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  &:hover {
+    border: none;
+    span {
+      color: $color-blue-light;
+    }
+  }
+  &:focus {
+    border: 0;
+    outline: none;
+  }
+}
+
+.btn-tool {
+  @include style-button($pd-3, $pd-30,$color-primary, $bd-2 solid transparent, $br-1, $color-white);
+  text-transform: uppercase;
+  @include style-text($fs-main,$fw-6,$color-white,none);
+
+  &:hover {
+    border-color: $color-primary;
+    background-color: transparent;
+    color:$color-primary;
   }
 }
