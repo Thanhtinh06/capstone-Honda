@@ -30,4 +30,7 @@
       }
     }
   }
+  &.bg-product {
+    @include style-bg($color-bg-main,cover,none);
+  }
 }

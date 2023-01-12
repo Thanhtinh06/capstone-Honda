@@ -1,0 +1,47 @@
+.card {
+  margin-bottom: $mg-30;
+  box-shadow: 5px 5px 5px 3px $color-box;
+  .card-body {
+    text-align: center;
+    padding: 0 2.1rem 2.1rem;
+    .card-title {
+      margin-top: $mg-20;
+      margin-bottom: 0;
+      min-height: 40px;
+      @include style-text($fs-16,$fw-4,$color-blue-dark,0);
+      font-family: AvenirNext-DemiBold;
+    
+    }
+    .card-text {
+      margin: $mg-20 0;
+      min-height: 105px;
+      @include style-text($fs-main,$fw-1,$color-blue-dark,0);
+      font-family: AvenirNext-Regular;
+    }
+  }
+}
+
+@media screen and (max-width:1200px){
+  .card {
+    .card-body {
+      .card-title {
+        min-height: 60px;
+      }
+      .card-text {
+        min-height: 150px;
+      }
+    }
+  }
+}
+@media screen and (max-width:992px){
+  .card {
+    .card-body {
+      .card-title {
+        min-height: 40px;
+      }
+      .card-text {
+        min-height: 105px;
+      }
+    }
+  }
+}

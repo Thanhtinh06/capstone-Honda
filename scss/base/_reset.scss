@@ -9,6 +9,30 @@
   font-family: 'Avenir Next Cyr Light', sans-serif;
   font-family: 'Avenir Next Cyr Medium', sans-serif;
   font-family: 'Avenir Next Cyr Heavy', sans-serif;
-
                                                 
 }
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: $color-bg-main;
+}
+.title {
+  text-align: center;
+  h2 {
+    @include style-text($fs-60,$fw-1,$color-blue-dark-light,$letter-space-0);
+  }
+  p {
+    @include style-text($fs-12,$fw-1,$color-blue-dark-light,$letter-space-0);
+  }
+}
+
