@@ -1,7 +1,6 @@
 header {
   @include type-position-zindex-width(fixed,10,100%);
   background-color: $color-primary;
-  padding: 0;
   .navHeader{
     @include reset-pd-mg();
     @include style-d-flex(space-between,none);

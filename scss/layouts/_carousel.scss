@@ -4,7 +4,6 @@
   .carousel__content {
     @include type-position-zindex-width(absolute,8,100%);
     @include position-top-left(53px,0);
-    padding: 0;
     img {
       object-fit: cover;
       width: 100%;

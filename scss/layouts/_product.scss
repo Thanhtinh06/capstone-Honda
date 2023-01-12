@@ -1,12 +1,6 @@
 .product {
   background-color: $color-bg-main;
   text-align: center;
-
-  .title {
-    h2 {
-      @include style-text($fs-60,$fw-1,$color-blue-dark-light,$letter-space-0);
-    }
-  }
   .text-offer {
     font-family: AvenirNext-Regular;
     margin-bottom: $mg-30;
@@ -46,5 +40,4 @@
   .future__content {
     @include style-slide(url(./../../images/MY21-Rugged-promo-banner-M.jpg));
   }
-
 }

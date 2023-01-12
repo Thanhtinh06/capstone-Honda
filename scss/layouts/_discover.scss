@@ -1,0 +1,12 @@
+.discover {
+  padding-bottom: $pd-100;
+  .discover__content {
+    margin-top: $mg-20;
+    padding: 0 $pd-20;
+  }
+  .discover__item {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
