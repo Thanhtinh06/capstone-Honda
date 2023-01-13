@@ -592,7 +592,7 @@
         </svg>
       </div>
       <div class="footer__between row">
-        <div class="footer__brand col-xl-4 col-lg-4">
+        <div class="footer__brand col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
           <p class="text__p">Stay In Touch</p>
           <ul class="social">
             <li><a href=""><img src="./images/vector16.svg" alt=""></a></li>
@@ -605,16 +605,19 @@
             <li><a href=""><img src="./images/vector4.svg" alt=""></a></li>
           </ul>
         </div>
-        <div class="search-form col-xl-4 col-lg-4">
+        <div class="search-form col-xl-4 col-lg-4 d-md-none d-sm-none d-none d-xl-block d-lg-block">
           <input type="text" class="form-control" required="" placeholder="Search for anything Honda">
         </div>
-        <div class="stay-infor col-xl-4 col-lg-4">
+        <div class="stay-infor col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
           <p class="text__p">Receive the latest news and exclusive updates.</p>
           <button class="btn btn-learn-more bg-white">Stay informed</button>
         </div>
+        <div class="search-form d-xl-none d-lg-none d-md-block d-sm-block d-block">
+          <input type="text" class="form-control" required="" placeholder="Search for anything Honda">
+        </div>
       </div>
-      <div class="row nav-footer">
-        <div class="col-xl-2 col-lg-2 footer-menu">
+      <div class="row nav-footer d-xl-flex d-lg-flex d-md-none d-sm-none d-none">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12 footer-menu" id="vehicles">
           <h4>Vehicles</h4>
           <ul class="menu-item">
             <li><a href="">Civic Models</a></li>
@@ -632,7 +635,7 @@
             <li><a href="">All Vehicles</a></li>
           </ul>
         </div>
-        <div class="col-xl-2 col-lg-2 footer-nav-item">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12 footer-nav-item">
           <h4>Shopping Tools</h4>
           <ul class="menu-item">
             <li><a href="">Build & Price</a></li>
@@ -644,7 +647,7 @@
             <li><a href="">Lease or Finance</a></li>
           </ul>
         </div>
-        <div class="col-xl-2 col-lg-2 footer-nav-item">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12 footer-nav-item">
           <h4>Discover Honda</h4>
           <ul class="menu-item">
             <li><a href="">About Us</a></li>
@@ -659,7 +662,7 @@
             <li><a href="">Honda Merchandise & Apparel</a></li>
           </ul>
         </div>
-        <div class="col-xl-2 col-lg-2 footer-nav-item">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-12 footer-nav-item">
           <h4>Help & Support</h4>
           <ul class="menu-item">
             <li><a href="">FAQ</a></li>
@@ -669,7 +672,7 @@
             <li><a href="">Buyer’s Guide</a></li>
           </ul>
         </div>
-        <div class="col-xl-2 col-lg-2 footer-nav-item">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 footer-nav-item">
           <h4>Owners</h4>
           <ul class="menu-item">
             <li><a href="">Honda Owners Site</a></li>
@@ -686,15 +689,149 @@
           </ul>
         </div>
       </div>
+      <!--ForSmall Screen-->
+      <div class="forSmallScreen d-xl-none d-lg-none d-md-block d-sm-block d-block row">
+        <div class="accordion" id="navFooter">
+          <div class="card">
+            <div class="card-header" id="vehicles-tab">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                  data-target="#vehicles" aria-expanded="true" aria-controls="vehicles">
+                  <h4>Vehicles</h4>
+                  <i></i>
+                </button>
+              </h2>
+            </div>
+
+            <div id="vehicles" class="collapse show" aria-labelledby="vehicles-tab" data-parent="#navFooter">
+              <div class="card-body">
+                <ul class="menu-item">
+                  <li><a href="">Civic Models</a></li>
+                  <li><a href="">Accord Models</a></li>
+                  <li><a href="">HR-V Crossover</a></li>
+                  <li><a href="">CR-V Crossover</a></li>
+                  <li><a href="">Passport SUV</a></li>
+                  <li><a href="">Pilot SUV</a></li>
+                  <li><a href="">Odyssey Minivan</a></li>
+                  <li><a href="">Ridgeline Truck</a></li>
+                  <li><a href="">Future Vehicles</a></li>
+                  <li><a href="">Rugged Capability</a></li>
+                  <li><a href="">Electrified Vehicles</a></li>
+                  <li><a href="">Honda Certified Pre-Owned</a></li>
+                  <li><a href="">All Vehicles</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="shoppingTool-tab">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#shoppingTool" aria-expanded="false" aria-controls="shoppingTool">
+                  <h4>Shopping Tools</h4>
+                </button>
+              </h2>
+            </div>
+            <div id="shoppingTool" class="collapse" aria-labelledby="shoppingTool-tab" data-parent="#navFooter">
+              <div class="card-body">
+                <ul class="menu-item">
+                  <li><a href="">Build & Price</a></li>
+                  <li><a href="">See Offers</a></li>
+                  <li><a href="">Search Inventory</a></li>
+                  <li><a href="">Estimate Payments</a></li>
+                  <li><a href="">Apply for Financing</a></li>
+                  <li><a href="">Trade-In Value</a></li>
+                  <li><a href="">Lease or Finance</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="discoverHonda-tab">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#discoverHonda" aria-expanded="false" aria-controls="discoverHonda">
+                  <h4>Discover Honda</h4>
+                </button>
+              </h2>
+            </div>
+            <div id="discoverHonda" class="collapse" aria-labelledby="discoverHonda-tab" data-parent="#navFooter">
+              <div class="card-body">
+                <ul class="menu-item">
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">News & Events</a></li>
+                  <li><a href="">Awards, Accolades & Ratings</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Investor Relations</a></li>
+                  <li><a href="">Corporate Social Responsibility</a></li>
+                  <li><a href="">Honda Financial Services</a></li>
+                  <li><a href="">Honda in America</a></li>
+                  <li><a href="">Honda Worldwide</a></li>
+                  <li><a href="">Honda Merchandise & Apparel</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="help-tab">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#hel" aria-expanded="false" aria-controls="help">
+                  <h4>Help & Support</h4>
+                </button>
+              </h2>
+            </div>
+            <div id="help" class="collapse" aria-labelledby="help-tab" data-parent="#navFooter">
+              <div class="card-body">
+                <ul class="menu-item">
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Customer Service</a></li>
+                  <li><a href="">Mobility Assistance Program</a></li>
+                  <li><a href="">Rear Entertainment System Accessibility for <br>Individuals with Disabilities</a></li>
+                  <li><a href="">Buyer’s Guide</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="owner-tab">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#owner" aria-expanded="false" aria-controls="owner">
+                  <h4>Owners</h4>
+                </button>
+              </h2>
+            </div>
+            <div id="owner" class="collapse" aria-labelledby="owner-tab" data-parent="#navFooter">
+              <div class="card-body">
+                <ul class="menu-item">
+                  <li><a href="">Honda Owners Site</a></li>
+                  <li><a href="">Schedule Service</a></li>
+                  <li><a href="">Parts & Service</a></li>
+                  <li><a href="">Certified Body Shop Locator
+                      eStore</a></li>
+                  <li><a href="">Roadside Assistance</a></li>
+                  <li><a href="">Pay My Bill</a></li>
+                  <li><a href="">Radio & Navi Codes</a></li>
+                  <li><a href="">HondaLink®</a></li>
+                  <li><a href="">Wi-Fi Hotspot Data Plans</a></li>
+                  <li><a href="">Safety Recall</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <div class="footer__bottom">
       <div class="text row">
-        <div class="text__left col-xl-6 col-lg-6">
+        <div class="text__left col-xl-6 col-lg-6 col-md-5 col-sm-5 col-12">
           <p> <a href="">©2023 American Honda Motor Co.</a>, Inc. All information contained herein applies to U.S.
             vehicles only. For
             non-U.S.-distributor information go to <a href="">world.honda.com.</a></p>
         </div>
-        <div class="text__right col-xl-4 col-lg-5">
+        <div class="text__right col-xl-4 col-lg-5 col-md-6 col-sm-6 col-12">
           <ul class="row">
             <li><a href="">Privacy Notice</a></li>
             <li><a href="">Prop 65 Info</a></li>
@@ -706,7 +843,7 @@
           </ul>
         </div>
       </div>
-      <div class="logo-brands">
+      <div class="logo-brands d-xl-flex d-lg-flex d-md-none d-sm-none d-none row">
         <img src="./images/vector10.svg" alt="">
         <img src="./images/vector12.svg" alt="">
         <img src="./images/vector13.svg" alt="">

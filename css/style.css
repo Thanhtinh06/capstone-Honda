@@ -91,7 +91,7 @@ header .navHeader .forSmall {
     font-size: 20px;
   }
   .forSmallScreen .content-nav {
-    position: absolute;
+    position: fixed;
     z-index: 9;
     width: 100%;
     top: 53px;
@@ -900,6 +900,27 @@ header .navHeader .forSmall {
 footer .footer__content {
   padding: 40px;
 }
+footer .footer__content h4 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00446b;
+  letter-spacing: 0;
+  font-family: AvenirNext-Bold;
+}
+footer .footer__content .menu-item {
+  text-align: left;
+}
+footer .footer__content .menu-item li {
+  margin: 5px 0;
+}
+footer .footer__content .menu-item li a {
+  font-size: 12px;
+  font-weight: 100;
+  color: #00446b;
+  letter-spacing: 0;
+  font-family: AvenirNext-Medium;
+}
 footer .footer__content .footer__logo {
   border-top: 3px solid #007cc0;
   border-bottom: 1px solid rgba(128, 128, 128, 0.256);
@@ -940,23 +961,6 @@ footer .footer__content .nav-footer {
   margin: 0 auto;
   padding-top: 20px;
 }
-footer .footer__content .nav-footer h4 {
-  font-size: 14px;
-  font-weight: 600;
-  color: #00446b;
-  letter-spacing: 0;
-  font-family: AvenirNext-Bold;
-}
-footer .footer__content .nav-footer .menu-item li {
-  margin: 5px 0;
-}
-footer .footer__content .nav-footer .menu-item li a {
-  font-size: 12px;
-  font-weight: 100;
-  color: #00446b;
-  letter-spacing: 0;
-  font-family: AvenirNext-Medium;
-}
 footer .footer__bottom {
   padding: 20px;
   background-color: #007cc0;
@@ -996,10 +1000,11 @@ footer .footer__bottom .text .text__right ul li a {
 }
 footer .footer__bottom .logo-brands {
   padding: 34px 100px 44px 49px;
-  display: flex;
   justify-content: space-around;
 }
 footer .footer__bottom .logo-brands img {
+  width: 95px;
+  height: 60px;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(263deg) brightness(106%) contrast(101%);
 }
 footer .footer__bottom .copyright {
@@ -1017,4 +1022,13 @@ footer .footer__bottom .copyright a {
   color: #FFFFFF;
   letter-spacing: 0;
   font-family: AvenirNext-Medium;
+}
+footer .forSmallScreen #navFooter .card {
+  margin: 0;
+  box-shadow: none;
+  border-left: none;
+  border-right: none;
+}
+footer .forSmallScreen #navFooter .card .card-header {
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
