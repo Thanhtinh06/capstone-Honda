@@ -1,6 +1,21 @@
 footer {
   .footer__content{
     padding: $pd-40;
+    h4 {
+      display: inline-block;
+      @include style-text($fs-main,$fw-6,$color-blue-dark-2,0);
+      font-family: AvenirNext-Bold,
+    }
+    .menu-item {
+      text-align: left;
+      li {
+        margin: $mg-5 0;
+        a {
+          @include style-text($fs-12,$fw-1,$color-blue-dark-2,0);
+          font-family: AvenirNext-Medium,
+        }
+      } 
+    }
     .footer__logo {
       border-top: 3px solid $color-primary;
       border-bottom: 1px solid $color-gray;
@@ -39,19 +54,6 @@ footer {
       justify-content: space-around;
       margin: 0 auto;
       padding-top: $pd-20;
-      h4 {
-        @include style-text($fs-main,$fw-6,$color-blue-dark-2,0);
-        font-family: AvenirNext-Bold,
-      }
-      .menu-item {
-        li {
-          margin: $mg-5 0;
-          a {
-            @include style-text($fs-12,$fw-1,$color-blue-dark-2,0);
-            font-family: AvenirNext-Medium,
-          }
-        } 
-      }
     }
   }
   .footer__bottom {
@@ -87,9 +89,10 @@ footer {
     }
     .logo-brands {
       padding: 34px 100px 44px 49px;
-      display: flex;
       justify-content: space-around;
       img {
+        width: 95px;
+        height: 60px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(263deg) brightness(106%) contrast(101%);
       }
     }
@@ -101,6 +104,19 @@ footer {
       a {
         @include style-text($fs-12,$fw-2,$color-white,0);
         font-family: AvenirNext-Medium,
+      }
+    }
+  }
+  .forSmallScreen {
+    #navFooter {
+      .card {
+        margin: 0;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+        .card-header {
+          padding: 0;
+        }
       }
     }
   }

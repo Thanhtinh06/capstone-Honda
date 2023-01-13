@@ -42,7 +42,7 @@ header {
   }
   .forSmallScreen {
     .content-nav {
-      @include type-position-zindex-width(absolute,9,100%);
+      @include type-position-zindex-width(fixed,9,100%);
       @include position-top-left($top-53,0);
       padding: 0;
       .card {
